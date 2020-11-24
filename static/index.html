@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contador-com-Server</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        <h1>Contador com server</h1>
+        <h2>Este contador pode ser usado por vários clients de uma só vez, computando dados de todos eles.</h2>
+        <h1 id="number"></h1>
+        <!--Há também como mudar o quanto é adicionado por click modificando o add(número)-->
+        <button onclick="add(1)">+1</button>
+        <button onclick="add(-1)">-1</button>
+    </body>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+</html>
